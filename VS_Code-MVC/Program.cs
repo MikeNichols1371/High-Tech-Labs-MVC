@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IDbConnection>((s) =>
 {
-    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("hightechlabs"));
+    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("azure"));
     conn.Open();
     return conn;
 });
