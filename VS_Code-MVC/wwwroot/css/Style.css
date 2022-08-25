@@ -1,0 +1,374 @@
+﻿:root {
+    background-image: url("../images/Colorful-Marijuana-Plants.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+html {
+    background-image: url("../images/Colorful-Marijuana-Plants.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+h2 {
+    font-size: 55px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+#menuitem {
+    font-size: 30px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+.homeimage {
+    image-resolution: calc();
+    image-rendering: auto;
+    image-rendering: optimizeQuality;
+    image-rendering: crisp-edges;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+/* Create a top navigation bar with a black background color  */
+
+.topnav {
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: ghostwhite;
+        text-align: center;
+        cursor: pointer;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #026b07;
+            color: ghostwhite;
+        }
+
+    /* Create a right-aligned (split) link inside the navigation bar */
+    .topnav i#cart-icon {
+        float: right;
+        color: ghostwhite;
+        color: ghostwhite;
+    }
+
+        .topnav i#cart-icon:hover {
+            background-color: #026b07;
+            color: ghostwhite;
+        }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 40px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #026b07;
+    }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: ghostwhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        color: ghostwhite;
+        padding: 12px 16px;
+        text-decoration: none;
+        background-color: #003a1c;
+        display: block;
+        text-align: left;
+    }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #026b07;
+            color: ghostwhite;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.price {
+    font-size: 20px;
+    text-align: center;
+    color: ghostwhite;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    font-size: 20px;
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #003a1c;
+    color: ghostwhite;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #026b07;
+    }
+
+label {
+    font-size: 25px;
+    color: ghostwhite;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    width: 100%;
+    color: ghostwhite;
+    padding: 20px;
+}
+
+/* Cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("../images/purp3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .3s;
+}
+
+    .cart.active {
+        right: 0;
+    }
+
+.cart-title {
+    color: ghostwhite;
+    border-bottom: 2px solid ghostwhite;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-image {
+    width: 110px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: .5rem;
+}
+
+.product-name {
+    font-size: 30px;
+    color: ghostwhite;
+}
+
+.details {
+    font-size: 22px;
+    color: ghostwhite;
+}
+
+.cart-price {
+    font-size: 21px;
+    color: ghostwhite;
+}
+
+.cart-quantity {
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 30px;
+    color: ghostwhite;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid ghostwhite;
+}
+
+.total-title {
+    font-size: 25px;
+    color: ghostwhite;
+}
+
+.total-price {
+    margin-left: 1rem;
+    font-size: 25px;
+    color: ghostwhite;
+}
+
+.buy-btn {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    font-size: 25px;
+    padding: 12px;
+    color: ghostwhite;
+    border: none;
+}
+
+    .buy-btn:hover {
+        background-color: #026b07;
+    }
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 35px;
+    color: ghostwhite;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: ghostwhite;
+    background-color: #003a1c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+}
+
+
+    .card button:hover {
+        background-color: #026b07;
+    }
+
+.card-title 
+{
+    color:ghostwhite;
+    font-size: 30px;
+    font-weight: 700;
+}
+.card-text
+{
+    color: ghostwhite;
+    font-size: 25px;
+}
+.card-details
+{
+    color: ghostwhite;
+    font-size: 20px;
+}
+.card-img-top {
+    width: 300px;
+    height: 350px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: ghostwhite;
+    background-color: #003a1c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+h4{
+    color: ghostwhite;
+    text-align: center;
+}
+
+
